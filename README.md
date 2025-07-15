@@ -76,18 +76,18 @@
 
 I specialize in architecting and building backend systems that solve real-world problems. My day-to-day work includes:
 
-- End-to-end ownership of backend features, from architecture and storage through to deployment and workflow layers
+- End-to-end development of backend features, from architecture and storage through to deployment and workflow layers
 - Designing robust RESTful APIs and multi-tenant schemas that bridge business requirements with optimal engineering solutions
 - Building workflow engines with ultra-low latency event triggers
 - Implementing advanced ABAC/RBAC access controls
-- Optimizing storage for speed and reliability (e.g., 3.5× faster disk reads, 40% smoother onboarding)
+- Optimizing storage for speed and reliability
 - Always open to collaborations around scalable systems, workflow automation, and impactful products!
 
 If you’re working on something interesting, let’s connect! I’m keen to collaborate and explore new opportunities.
 
 ---
 
-## 🌟 Featured Projects
+## 🌟 Featured Project
 
 ### Non-Invasive Tuberculosis Detection  
 **Jetson Nano, Python, TensorFlow, FastAPI, Node.Js**  
@@ -99,18 +99,6 @@ _Feb ’24 – Jan ’25_
 - Built an NLP-driven Clinical Decision Support System (CDSS) for treatment recommendations and drug alternatives
 - Integrated everything with a web app for instant results visualization
 
----
-
-### Event Ease  
-**JavaScript, Node.Js, Express.Js, MongoDB, REST API, Docker, Flutter**  
-_Apr ’22 – Jul ’23_
-
-- Automated event invitations, reducing manual effort by 80% with QR code verification (in live use by local society)
-- Responsive Flutter frontend, RESTful API integration for seamless user experience
-- Dockerized backend for effortless deployment and scaling  
-- [🔗 Project Repository](your-repo-link) <!-- Replace with your actual link if public -->
-
----
 
 ## 🤝 Connect & Collaborate
 
