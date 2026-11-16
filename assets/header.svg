@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <style>
+    .mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
+    .l{opacity:0;animation:show .01s forwards}
+    .l1{animation-delay:.4s}.l2{animation-delay:1.6s}.l3{animation-delay:2.8s}.l4{animation-delay:4s}.l5{animation-delay:5.2s}
+    @keyframes show{to{opacity:1}}
+    .cur{animation:blink 1s steps(2) infinite}
+    @keyframes blink{50%{opacity:0}}
+    .glow{animation:pulse 4s ease-in-out infinite}
+    @keyframes pulse{50%{opacity:.55}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0" x2="1">
+      <stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#bc8cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="260" rx="14" fill="url(#bg)" stroke="#30363d"/>
+  <circle class="glow" cx="800" cy="40" r="90" fill="#58a6ff" opacity=".08"/>
+  <circle class="glow" cx="120" cy="230" r="80" fill="#bc8cff" opacity=".08"/>
+  <rect width="900" height="36" rx="14" fill="#161b22"/>
+  <rect y="22" width="900" height="14" fill="#161b22"/>
+  <circle cx="22" cy="18" r="6" fill="#ff5f56"/><circle cx="42" cy="18" r="6" fill="#ffbd2e"/><circle cx="62" cy="18" r="6" fill="#27c93f"/>
+  <text class="mono" x="450" y="23" font-size="12" fill="#8b949e" text-anchor="middle">mj@thb: ~/backend</text>
+  <g class="mono" font-size="16">
+    <text class="l l1" x="30" y="78" fill="#8b949e">$ <tspan fill="#e6edf3">whoami</tspan></text>
+    <text class="l l1" x="30" y="108" font-size="26" font-weight="700" fill="url(#ac)">Mrituanjay Nath Jha</text>
+    <text class="l l2" x="30" y="140" fill="#8b949e">$ <tspan fill="#e6edf3">cat role.txt</tspan></text>
+    <text class="l l2" x="30" y="162" fill="#7ee787">Software R&amp;D Engineer @ THB · multi-tenant healthcare platform</text>
+    <text class="l l3" x="30" y="190" fill="#8b949e">$ <tspan fill="#e6edf3">grep -r "focus" ./me</tspan></text>
+    <text class="l l3" x="30" y="212" fill="#ffa657">distributed systems · outbox/CDC · observability · Go</text>
+    <text class="l l4" x="30" y="240" fill="#8b949e">$ <tspan fill="#e6edf3">uptime</tspan> <tspan class="l l5" fill="#7ee787">→ shipping v2026.0.0</tspan> <tspan class="cur" fill="#58a6ff">▌</tspan></text>
+  </g>
+</svg>

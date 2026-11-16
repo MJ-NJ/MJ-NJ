@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="150" viewBox="0 0 900 150">
+  <style>
+    .sans{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+    .flow{stroke-dasharray:6 6;animation:dash 1.2s linear infinite}
+    @keyframes dash{to{stroke-dashoffset:-12}}
+  </style>
+  <rect width="900" height="150" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <text class="sans" x="20" y="26" font-size="12" fill="#8b949e">HOW A WRITE SURVIVES A CRASH · outbox → CDC → consumers</text>
+  <g class="sans" font-size="13" text-anchor="middle" fill="#e6edf3">
+    <rect x="30" y="58" width="130" height="50" rx="8" fill="#161b22" stroke="#58a6ff"/>
+    <text x="95" y="80">Service tx</text><text x="95" y="97" font-size="10" fill="#8b949e">business row + event</text>
+    <rect x="215" y="58" width="130" height="50" rx="8" fill="#161b22" stroke="#bc8cff"/>
+    <text x="280" y="80">Postgres</text><text x="280" y="97" font-size="10" fill="#8b949e">outbox table</text>
+    <rect x="400" y="58" width="130" height="50" rx="8" fill="#161b22" stroke="#ffa657"/>
+    <text x="465" y="80">CDC relay</text><text x="465" y="97" font-size="10" fill="#8b949e">replay on restart</text>
+    <rect x="585" y="58" width="130" height="50" rx="8" fill="#161b22" stroke="#7ee787"/>
+    <text x="650" y="80">Broker</text><text x="650" y="97" font-size="10" fill="#8b949e">at-least-once</text>
+    <rect x="770" y="58" width="100" height="50" rx="8" fill="#161b22" stroke="#ff7b72"/>
+    <text x="820" y="80">Consumers</text><text x="820" y="97" font-size="10" fill="#8b949e">idempotent</text>
+  </g>
+  <g stroke="#58a6ff" stroke-width="2" fill="none" class="flow">
+    <path d="M160 83H215"/><path d="M345 83H400"/><path d="M530 83H585"/><path d="M715 83H770"/>
+  </g>
+  <circle r="4" fill="#58a6ff">
+    <animateMotion dur="4s" repeatCount="indefinite" path="M95 83H820"/>
+  </circle>
+  <circle r="4" fill="#bc8cff">
+    <animateMotion dur="4s" begin="2s" repeatCount="indefinite" path="M95 83H820"/>
+  </circle>
+</svg>
